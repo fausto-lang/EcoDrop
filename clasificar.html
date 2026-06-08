@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Inteligente - EcoGestión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/clasificar.css">
+</head>
+<body>
+
+    <div class="contenedor-aplicacion">
+        
+        <aside class="barra-lateral">
+            <div class="marca-lateral">
+                <span class="material-symbols-outlined icono-logo">eco</span>
+                <div>
+                    <h2>EcoDrop</h2>
+                    <p>Gestión de Residuos</p>
+                </div>
+            </div>
+
+            <nav class="navegacion-lateral">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="activo">
+                        <a href="clasificar.html">
+                            <span class="material-symbols-outlined">analytics</span>
+                            Clasificar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inventario.html">
+                            <span class="material-symbols-outlined">inventory_2</span>
+                            Inventario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="informes.html">
+                            <span class="material-symbols-outlined">description</span>
+                            Informes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ranking.html">
+                            <span class="material-symbols-outlined">leaderboard</span>
+                            Ranking
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="pie-lateral">
+                <ul class="navegacion-pie">
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">help</span>
+                            Ayuda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="cerrar-sesion">
+                            <span class="material-symbols-outlined">logout</span>
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="contenido-principal">
+            
+            <header class="cabecera-principal">
+                <div class="titulo-seccion">
+                    <h3>Clasificar</h3>
+                </div>
+                
+                <div class="acciones-cabecera">
+                    <div class="caja-buscar">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" placeholder="Buscar registros...">
+                    </div>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="avatar-usuario">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Usuario">
+                    </div>
+                </div>
+            </header>
+
+            <div class="zona-clasificacion">
+                
+                <div class="columna-izquierda">
+                    <section class="introduccion-modulo">
+                        <h1>Clasificación Inteligente</h1>
+                        <p>Utilice nuestra IA avanzada para identificar y procesar residuos de forma eficiente.</p>
+                    </section>
+
+                    <div class="cuadrícula-metodos">
+                        <section class="tarjeta-metodo bloque-imagen">
+                            <div class="envoltura-icono-central">
+                                <span class="material-symbols-outlined">camera_enhance</span>
+                            </div>
+                            <h3>Reconocimiento por Imagen</h3>
+                            <p>Arrastre y suelte una fotografía del residuo o haga clic para capturar desde la cámara.</p>
+                            <div class="acciones-metodo">
+                                <button class="boton-primario">Subir Archivo</button>
+                                <button class="boton-secundario">Abrir Cámara</button>
+                            </div>
+                        </section>
+
+                        <section class="tarjeta-metodo bloque-voz">
+                            <div class="envoltura-icono-central icono-voz">
+                                <span class="material-symbols-outlined">mic</span>
+                            </div>
+                            <h3>RECONOCIMIENTO POR VOZ</h3>
+                            <p>Diga el nombre del objeto para clasificar</p>
+                        </section>
+
+                        <section class="tarjeta-metodo bloque-categorias">
+                            <h3>Categorías Predefinidas</h3>
+                            <div class="cuadrícula-iconos-categorias">
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-organico">forest</span>
+                                    <span>Orgánico</span>
+                                </div>
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-plastico">water_drop</span>
+                                    <span>Plástico</span>
+                                </div>
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-vidrio">hourglass_empty</span>
+                                    <span>Vidrio</span>
+                                </div>
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-metal">build</span>
+                                    <span>Metal</span>
+                                </div>
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-electronicos">bolt</span>
+                                    <span>E-Waste</span>
+                                </div>
+                                <div class="item-categoria-fija">
+                                    <span class="material-symbols-outlined cat-otros">more_horiz</span>
+                                    <span>Otros</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <aside class="columna-derecha">
+                    <section class="tarjeta-analisis">
+                        <div class="cabecera-analisis">
+                            <h3>Sugerencias de IA</h3>
+                            <p>Resultados del análisis en tiempo real</p>
+                        </div>
+
+                        <div class="bloque-resultado">
+                            <div class="indicador-confianza">
+                                <span class="porcentaje-confianza">98% Confianza</span>
+                                <span class="material-symbols-outlined icono-verificado">verified</span>
+                            </div>
+                            <h4>Botella PET (Plástico)</h4>
+                            <p class="descripcion-resultado">Polietileno tereftalato identificado por transparencia y base.</p>
+                        </div>
+
+                        <div class="bloque-tratamiento">
+                            <h5><span class="material-symbols-outlined">location_on</span> Tratamiento Recomendado</h5>
+                            <ol class="lista-pasos">
+                                <li>
+                                    <span class="numero-paso">1</span>
+                                    <p>Enjuagar para eliminar residuos de líquidos azucarados o lácteos.</p>
+                                </li>
+                                <li>
+                                    <span class="numero-paso">2</span>
+                                    <p>Aplastar la botella para reducir su volumen en un 60%.</p>
+                                </li>
+                                <li>
+                                    <span class="numero-paso">3</span>
+                                    <p>Depositar en el contenedor azul de reciclaje municipal (Punto A4).</p>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="bloque-co2">
+                            <span class="valor-co2">0.2kg</span>
+                            <span class="etiqueta-co2">CO2 Ahorrado</span>
+                        </div>
+
+                        <button class="boton-confirmar">
+                            <span class="material-symbols-outlined">cloud_upload</span>
+                            Confirmar Clasificación
+                        </button>
+                    </section>
+                </aside>
+            </div>
+
+            <section class="seccion-historial-inferior">
+                <div class="cabecera-historial">
+                    <h3>Actividad Reciente</h3>
+                    <p>Últimos residuos procesados en esta estación</p>
+                    <a href="#" class="enlace-historial">Ver todo el historial &rarr;</a>
+                </div>
+                
+                <div class="cuadrícula-historial-corto">
+                    <div class="tarjeta-mini-item">
+                        <div class="envoltura-icono-mini fondo-mini-vidrio">
+                            <span class="material-symbols-outlined icono-mini-vidrio">receipt_long</span>
+                        </div>
+                        <div>
+                            <h4>Frasco de Vidrio</h4>
+                            <p>Hace 15 min</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-mini-item">
+                        <div class="envoltura-icono-mini fondo-mini-organico">
+                            <span class="material-symbols-outlined icono-mini-organico">eco</span>
+                        </div>
+                        <div>
+                            <h4>Restos Frutales</h4>
+                            <p>Hace 42 min</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-mini-item">
+                        <div class="envoltura-icono-mini fondo-mini-papel">
+                            <span class="material-symbols-outlined icono-mini-papel">folder_open</span>
+                        </div>
+                        <div>
+                            <h4>Cartón Plegado</h4>
+                            <p>Hace 1 hora</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-mini-item">
+                        <div class="envoltura-icono-mini fondo-mini-alerta">
+                            <span class="material-symbols-outlined icono-mini-alerta">cable</span>
+                        </div>
+                        <div>
+                            <h4>Cargador USB</h4>
+                            <p>Hace 3 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/clasificacion.js"></script>
+</body>
+</html>

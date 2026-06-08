@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking e Incentivos - EcoGestión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/ranking.css">
+</head>
+<body>
+
+    <div class="contenedor-aplicacion">
+        
+        <aside class="barra-lateral">
+            <div class="marca-lateral">
+                <span class="material-symbols-outlined icono-logo">eco</span>
+                <div>
+                    <h2>EcoDrop</h2>
+                    <p>Gestión de Residuos</p>
+                </div>
+            </div>
+
+            <nav class="navegacion-lateral">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clasificar.html">
+                            <span class="material-symbols-outlined">analytics</span>
+                            Clasificar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inventario.html">
+                            <span class="material-symbols-outlined">inventory_2</span>
+                            Inventario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="informes.html">
+                            <span class="material-symbols-outlined">description</span>
+                            Informes
+                        </a>
+                    </li>
+                    <li class="activo">
+                        <a href="ranking.html">
+                            <span class="material-symbols-outlined">leaderboard</span>
+                            Ranking
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="pie-lateral">
+                <ul class="navegacion-pie">
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">help</span>
+                            Ayuda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="cerrar-sesion">
+                            <span class="material-symbols-outlined">logout</span>
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="contenido-principal">
+            
+            <header class="cabecera-principal">
+                <div class="titulo-seccion">
+                    <h3>Ranking e Incentivos</h3>
+                </div>
+                
+                <div class="acciones-cabecera">
+                    <div class="caja-buscar">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" placeholder="Buscar usuario...">
+                    </div>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="avatar-usuario">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Usuario">
+                    </div>
+                </div>
+            </header>
+
+            <div class="zona-gamificacion">
+                
+                <div class="columna-izquierda-progreso">
+                    <section class="tarjeta-impacto-usuario">
+                        <span class="badge-impacto">Mi Impacto</span>
+                        <div class="puntos-totales">12,450</div>
+                        <span class="etiqueta-puntos">Puntos EcoTotales</span>
+                        
+                        <div class="bloque-nivel-actual">
+                            <span class="subtitulo-nivel">NIVEL ACTUAL</span>
+                            <h4>Guardián de la Tierra</h4>
+                            <div class="barra-progreso-contenedor">
+                                <div class="progreso-llenado" style="width: 75%;"></div>
+                                <span class="porcentaje-barra">75%</span>
+                            </div>
+                            <p class="texto-restante">Faltan 2,550 puntos para <strong>Héroe de la Biosfera</strong></p>
+                        </div>
+                    </section>
+
+                    <section class="tarjeta-metas-ambientales">
+                        <div class="cabecera-seccion-interna">
+                            <span class="material-symbols-outlined icono-verde">target</span>
+                            <h3>Metas Ambientales</h3>
+                        </div>
+                        
+                        <div class="meta-individual">
+                            <div class="datos-meta">
+                                <span>Meta Personal: Reducción de Plástico</span>
+                                <span class="porcentaje-meta">82%</span>
+                            </div>
+                            <div class="barra-progreso-simple">
+                                <div class="progreso-simple-llenado" style="width: 82%;"></div>
+                            </div>
+                            <p class="descripcion-meta">Has recuperado 41kg de 50kg proyectados para este mes.</p>
+                        </div>
+
+                        <div class="bloque-meta-comunitaria">
+                            <div class="icono-comunidad">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <div class="info-comunidad">
+                                <h4>Meta Comunitaria: Re-forestación</h4>
+                                <div class="progreso-comunidad-texto">
+                                    <div class="avatar-grupo-simulado">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&auto=format&fit=crop&q=80" alt="U1">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&auto=format&fit=crop&q=80" alt="U2">
+                                    </div>
+                                    <span class="conteo-meta"><strong>950</strong> / 1000 kg</span>
+                                </div>
+                                <p class="alerta-comunidad">¡Solo faltan 50kg para plantar 10 árboles!</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="columna-derecha-tablas">
+                    <section class="tarjeta-top-recicladores">
+                        <div class="cabecera-tabla-ranking">
+                            <h3>Top Recicladores</h3>
+                            <div class="selectores-filtro-tiempo">
+                                <button class="boton-filtro-tiempo">Semanal</button>
+                                <button class="boton-filtro-tiempo activo">Mensual</button>
+                            </div>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>POS</th>
+                                    <th>USUARIO</th>
+                                    <th>PUNTOS</th>
+                                    <th>MEDALLAS</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="posicion-tabla">01</td>
+                                    <td class="usuario-tabla">
+                                        <div class="avatar-iniciales fondo-cs">CS</div>
+                                        <span>Carlos Sánchez</span>
+                                    </td>
+                                    <td class="puntos-tabla">18,920</td>
+                                    <td>
+                                        <span class="material-symbols-outlined medalla-oro">workspace_premium</span>
+                                        <span class="material-symbols-outlined medalla-cohete">rocket_launch</span>
+                                    </td>
+                                    <td><button class="boton-opcion-tabla"><span class="material-symbols-outlined">more_vert</span></button></td>
+                                </tr>
+                                <tr class="fila-usuario-actual">
+                                    <td class="posicion-tabla">05</td>
+                                    <td class="usuario-tabla">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Tú">
+                                        <span><strong>Tú (Ana López)</strong></span>
+                                    </td>
+                                    <td class="puntos-tabla"><strong>12,450</strong></td>
+                                    <td>
+                                        <span class="material-symbols-outlined medalla-plata">toll</span>
+                                        <span class="material-symbols-outlined medalla-reciclaje">autorenew</span>
+                                    </td>
+                                    <td><span class="badge-posicion-actual">ESTÁS AQUÍ</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="posicion-tabla">02</td>
+                                    <td class="usuario-tabla">
+                                        <div class="avatar-iniciales fondo-mr">MR</div>
+                                        <span>Marta Rodríguez</span>
+                                    </td>
+                                    <td class="puntos-tabla">16,400</td>
+                                    <td><span class="material-symbols-outlined medalla-bronce">military_tech</span></td>
+                                    <td><button class="boton-opcion-tabla"><span class="material-symbols-outlined">more_vert</span></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="posicion-tabla">03</td>
+                                    <td class="usuario-tabla">
+                                        <div class="avatar-iniciales fondo-jp">JP</div>
+                                        <span>Jorge Pérez</span>
+                                    </td>
+                                    <td class="puntos-tabla">15,100</td>
+                                    <td><span class="material-symbols-outlined medalla-verificada">verified</span></td>
+                                    <td><button class="boton-opcion-tabla"><span class="material-symbols-outlined">more_vert</span></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="tarjeta-logros-medallas">
+                        <div class="cabecera-logros">
+                            <h3>Logros y Medallas</h3>
+                            <a href="#" class="enlace-ver-todos">Ver todos</a>
+                        </div>
+                        <div class="cuadrícula-medallas">
+                            <div class="item-medalla-lograda">
+                                <div class="circulo-medalla fondo-verde-logro">
+                                    <span class="material-symbols-outlined">grade</span>
+                                </div>
+                                <h4>Primer Reciclaje</h4>
+                                <p>Conseguido el 12/01</p>
+                            </div>
+
+                            <div class="item-medalla-lograda">
+                                <div class="circulo-medalla fondo-azul-logro">
+                                    <span class="material-symbols-outlined">water_drop</span>
+                                </div>
+                                <h4>Ahorro de Agua</h4>
+                                <p>Conseguido el 05/02</p>
+                            </div>
+
+                            <div class="item-medalla-lograda">
+                                <div class="circulo-medalla fondo-amarillo-logro">
+                                    <span class="material-symbols-outlined">shopping_bag</span>
+                                </div>
+                                <h4>100kg Recuperados</h4>
+                                <p>Conseguido el 20/02</p>
+                            </div>
+
+                            <div class="item-medalla-lograda bloqueada">
+                                <div class="circulo-medalla fondo-bloqueado">
+                                    <span class="material-symbols-outlined">lock</span>
+                                </div>
+                                <h4>Experto en Plásticos</h4>
+                                <p>Llega a 500 puntos</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="banner-canje-tienda">
+                <div class="informacion-canje">
+                    <h2>Canjea tus puntos por beneficios</h2>
+                    <p>Tus puntos acumulados pueden convertirse en descuentos para servicios municipales, bonos de transporte o donaciones a causas ambientales certificadas.</p>
+                    <button class="boton-tienda">Ir a la EcoTienda</button>
+                </div>
+                <div class="contenedor-imagen-tienda">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&auto=format&fit=crop&q=80" alt="Estantería eco-amigable">
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/ranking.js"></script>
+</body>
+</html>

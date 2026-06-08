@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Económicos - EcoGestión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/informes.css">
+</head>
+<body>
+
+    <div class="contenedor-aplicacion">
+        
+        <aside class="barra-lateral">
+            <div class="marca-lateral">
+                <span class="material-symbols-outlined icono-logo">eco</span>
+                <div>
+                    <h2>EcoDrop</h2>
+                    <p>Gestión de Residuos</p>
+                </div>
+            </div>
+
+            <nav class="navegacion-lateral">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="clasificar.html">
+                            <span class="material-symbols-outlined">analytics</span>
+                            Clasificar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inventario.html">
+                            <span class="material-symbols-outlined">inventory_2</span>
+                            Inventario
+                        </a>
+                    </li>
+                    <li class="activo">
+                        <a href="informes.html">
+                            <span class="material-symbols-outlined">description</span>
+                            Informes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ranking.html">
+                            <span class="material-symbols-outlined">leaderboard</span>
+                            Ranking
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="pie-lateral">
+                <ul class="navegacion-pie">
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">help</span>
+                            Ayuda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="cerrar-sesion">
+                            <span class="material-symbols-outlined">logout</span>
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="contenido-principal">
+            
+            <header class="cabecera-principal">
+                <div class="titulo-seccion">
+                    <h3>Informes Económicos</h3>
+                </div>
+                
+                <div class="acciones-cabecera">
+                    <div class="caja-buscar">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" placeholder="Buscar informes...">
+                    </div>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="boton-icono">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <div class="avatar-usuario">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Usuario">
+                    </div>
+                </div>
+            </header>
+
+            <section class="introduccion-modulo">
+                <div>
+                    <h1>Balance de Recuperación</h1>
+                    <p>Seguimiento financiero de materiales procesados este mes.</p>
+                </div>
+                <div class="acciones-descarga">
+                    <button class="boton-excel">
+                        <span class="material-symbols-outlined">description</span>
+                        Descargar Excel
+                    </button>
+                    <button class="boton-pdf">
+                        <span class="material-symbols-outlined">picture_as_pdf</span>
+                        Descargar PDF
+                    </button>
+                </div>
+            </section>
+
+            <div class="cuadrícula-metricas">
+                <section class="tarjeta-metrica">
+                    <div class="cabecera-metrica">
+                        <div class="envoltura-icono-metrica fondo-verde-claro">
+                            <span class="material-symbols-outlined texto-verde">payments</span>
+                        </div>
+                        <span class="etiqueta-cambio positivo">+12.5%</span>
+                    </div>
+                    <span class="subtitulo-metrica">INGRESOS TOTALES</span>
+                    <div class="valor-metrica">€42,850.00</div>
+                    <p class="comparativa-metrica">Vs €38,100 el mes anterior</p>
+                </section>
+
+                <section class="tarjeta-metrica">
+                    <div class="cabecera-metrica">
+                        <div class="envoltura-icono-metrica fondo-azul-claro">
+                            <span class="material-symbols-outlined texto-azul">inventory_2</span>
+                        </div>
+                        <span class="etiqueta-cambio estable">Estable</span>
+                    </div>
+                    <span class="subtitulo-metrica">VALOR EN STOCK</span>
+                    <div class="valor-metrica">€15,230.45</div>
+                    <p class="comparativa-metrica">Estimado de 14.2 tons actuales</p>
+                </section>
+
+                <section class="tarjeta-metrica">
+                    <div class="cabecera-metrica">
+                        <div class="envoltura-icono-metrica fondo-naranja-claro">
+                            <span class="material-symbols-outlined texto-naranja">trending_up</span>
+                        </div>
+                        <span class="etiqueta-cambio positivo">+4.2%</span>
+                    </div>
+                    <span class="subtitulo-metrica">PROMEDIO DE VENTA</span>
+                    <div class="valor-metrica">€312.50 / t</div>
+                    <p class="comparativa-metrica">Incremento en el valor del plástico</p>
+                </section>
+            </div>
+
+            <div class="bloque-graficos-comparativos">
+                <section class="tarjeta-grafico-materiales">
+                    <div class="cabecera-bloque-grafico">
+                        <div>
+                            <h3>Ingresos por Tipo de Material</h3>
+                            <p>Distribución financiera del mes de Octubre</p>
+                        </div>
+                        <select class="selector-periodo">
+                            <option>Últimos 30 días</option>
+                        </select>
+                    </div>
+                    <div class="simulacion-grafico-barras">
+                        <div class="columna-simulada"><div class="alto-barra" style="height: 85%;"></div><span>Papel/Cartón</span></div>
+                        <div class="columna-simulada"><div class="alto-barra" style="height: 60%;"></div><span>Plástico</span></div>
+                        <div class="columna-simulada"><div class="alto-barra" style="height: 40%;"></div><span>Vidrio</span></div>
+                        <div class="columna-simulada"><div class="alto-barra" style="height: 20%;"></div><span>Otros</span></div>
+                    </div>
+                </section>
+
+                <section class="tarjeta-tabla-mensual">
+                    <div class="cabecera-bloque-grafico">
+                        <h3>Comparativa Mensual</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>MES</th>
+                                <th>INGRESOS</th>
+                                <th>COSTES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nombre-mes">Octubre</td>
+                                <td class="monto-ingreso">€42,850</td>
+                                <td class="monto-coste">€12,100</td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-mes">Septiembre</td>
+                                <td class="monto-ingreso">€38,100</td>
+                                <td class="monto-coste">€11,400</td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-mes">Agosto</td>
+                                <td class="monto-ingreso">€35,400</td>
+                                <td class="monto-coste">€10,900</td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-mes">Julio</td>
+                                <td class="monto-ingreso">€40,200</td>
+                                <td class="monto-coste">€11,800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <section class="banner-impacto-circular">
+                <div class="informacion-impacto">
+                    <h2>Impacto Económico Circular</h2>
+                    <p>Por cada euro invertido en procesos de clasificación, EcoGestión ha generado un retorno de €3.54 en materias primas reutilizables para la industria local.</p>
+                    
+                    <div class="metricas-banner">
+                        <div>
+                            <span class="sub-etiqueta-banner">TONELADAS RECUPERADAS</span>
+                            <span class="valor-banner">158.4 t</span>
+                        </div>
+                        <div>
+                            <span class="sub-etiqueta-banner">AHORRO EN VERTEDERO</span>
+                            <span class="valor-banner">€24,300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-imagen-banner">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&auto=format&fit=crop&q=80" alt="Materiales compactados para reciclaje">
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/informes.js"></script>
+</body>
+</html>
